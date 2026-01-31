@@ -84,10 +84,42 @@
     ],
     "onsite_facilities": { "pool": true, "gym": true }
   },
-
-  // ---------- QUEENSTOWN / ALEXANDRA ----------
   {
     "id": 6,
+    "name": "Wallich Residence",
+    "address": "Wallich Street, Singapore",
+    "lat": 1.2754,
+    "lng": 103.8458,
+    "price": 3400000,
+    "size_sqft": 1500,
+    "bedrooms": 3,
+    "bathrooms": 2,
+    "completion_year": 2018,
+    "images": [
+      "https://images.unsplash.com/photo-1568605114967-8130f3a36994",
+      "https://images.unsplash.com/photo-1600573472591-ee6981cfcb22"
+    ],
+    "onsite_facilities": { "pool": true, "gym": true }
+  },
+  {
+    "id": 7,
+    "name": "Martin Modern",
+    "address": "Martin Place, Singapore",
+    "lat": 1.2918,
+    "lng": 103.8341,
+    "price": 2400000,
+    "size_sqft": 1150,
+    "bedrooms": 3,
+    "bathrooms": 2,
+    "completion_year": 2021,
+    "images": [
+      "https://images.unsplash.com/photo-1600607687644-aac76c7e18b9",
+      "https://images.unsplash.com/photo-1600585152220-90363fe7e115"
+    ],
+    "onsite_facilities": { "pool": true, "gym": true }
+  },
+  {
+    "id": 8,
     "name": "Queens Peak",
     "address": "Dawson Road, Singapore",
     "lat": 1.2945,
@@ -98,12 +130,13 @@
     "bathrooms": 2,
     "completion_year": 2020,
     "images": [
-      "https://images.unsplash.com/photo-1507089947368-19c1da9775ae"
+      "https://images.unsplash.com/photo-1507089947368-19c1da9775ae",
+      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c"
     ],
     "onsite_facilities": { "pool": true, "gym": true }
   },
   {
-    "id": 7,
+    "id": 9,
     "name": "Commonwealth Towers",
     "address": "West Coast Road, Singapore",
     "lat": 1.2969,
@@ -114,46 +147,11 @@
     "bathrooms": 2,
     "completion_year": 2017,
     "images": [
-      "https://images.unsplash.com/photo-1600585152220-90363fe7e115"
+      "https://images.unsplash.com/photo-1600585152220-90363fe7e115",
+      "https://images.unsplash.com/photo-1556020685-ae41abfc9365"
     ],
     "onsite_facilities": { "pool": true, "gym": false }
   },
-
-  // ---------- EAST ----------
-  {
-    "id": 8,
-    "name": "Parc Esta",
-    "address": "Sims Avenue, Singapore",
-    "lat": 1.3181,
-    "lng": 103.8924,
-    "price": 1320000,
-    "size_sqft": 780,
-    "bedrooms": 2,
-    "bathrooms": 2,
-    "completion_year": 2023,
-    "images": [
-      "https://images.unsplash.com/photo-1567767292278-a4f21aa2d36e"
-    ],
-    "onsite_facilities": { "pool": true, "gym": true }
-  },
-  {
-    "id": 9,
-    "name": "Treasure at Tampines",
-    "address": "Tampines Lane, Singapore",
-    "lat": 1.3452,
-    "lng": 103.9386,
-    "price": 1180000,
-    "size_sqft": 710,
-    "bedrooms": 2,
-    "bathrooms": 2,
-    "completion_year": 2023,
-    "images": [
-      "https://images.unsplash.com/photo-1556020685-ae41abfc9365"
-    ],
-    "onsite_facilities": { "pool": true, "gym": true }
-  },
-
-  // ---------- NORTH / CENTRAL ----------
   {
     "id": 10,
     "name": "Sky Habitat",
@@ -166,18 +164,179 @@
     "bathrooms": 2,
     "completion_year": 2015,
     "images": [
+      "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d",
+      "https://images.unsplash.com/photo-1567767292278-a4f21aa2d36e"
+    ],
+    "onsite_facilities": { "pool": true, "gym": true }
+  },
+  {
+    "id": 11,
+    "name": "Parc Esta",
+    "address": "Sims Avenue, Singapore",
+    "lat": 1.3181,
+    "lng": 103.8924,
+    "price": 1320000,
+    "size_sqft": 780,
+    "bedrooms": 2,
+    "bathrooms": 2,
+    "completion_year": 2023,
+    "images": [
+      "https://images.unsplash.com/photo-1567767292278-a4f21aa2d36e",
+      "https://images.unsplash.com/photo-1554995207-c18c203602cb"
+    ],
+    "onsite_facilities": { "pool": true, "gym": true }
+  },
+  {
+    "id": 12,
+    "name": "Treasure at Tampines",
+    "address": "Tampines Lane, Singapore",
+    "lat": 1.3452,
+    "lng": 103.9386,
+    "price": 1180000,
+    "size_sqft": 710,
+    "bedrooms": 2,
+    "bathrooms": 2,
+    "completion_year": 2023,
+    "images": [
+      "https://images.unsplash.com/photo-1556020685-ae41abfc9365",
+      "https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b"
+    ],
+    "onsite_facilities": { "pool": true, "gym": true }
+  },
+  {
+    "id": 13,
+    "name": "The Tapestry",
+    "address": "Tampines Street 86, Singapore",
+    "lat": 1.3527,
+    "lng": 103.9321,
+    "price": 1050000,
+    "size_sqft": 680,
+    "bedrooms": 2,
+    "bathrooms": 2,
+    "completion_year": 2021,
+    "images": [
+      "https://images.unsplash.com/photo-1600573472591-ee6981cfcb22",
+      "https://images.unsplash.com/photo-1505691938895-1758d7feb511"
+    ],
+    "onsite_facilities": { "pool": true, "gym": true }
+  },
+  {
+    "id": 14,
+    "name": "Hillview Peak",
+    "address": "Hillview Rise, Singapore",
+    "lat": 1.3606,
+    "lng": 103.7665,
+    "price": 1250000,
+    "size_sqft": 900,
+    "bedrooms": 3,
+    "bathrooms": 2,
+    "completion_year": 2015,
+    "images": [
+      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c",
+      "https://images.unsplash.com/photo-1572120360610-d971b9d7767c"
+    ],
+    "onsite_facilities": { "pool": true, "gym": false }
+  },
+  {
+    "id": 15,
+    "name": "The Line @ Tanjong Rhu",
+    "address": "Tanjong Rhu Road, Singapore",
+    "lat": 1.3016,
+    "lng": 103.8732,
+    "price": 1980000,
+    "size_sqft": 1180,
+    "bedrooms": 3,
+    "bathrooms": 2,
+    "completion_year": 2016,
+    "images": [
+      "https://images.unsplash.com/photo-1598928506311-c55ded91a20c",
       "https://images.unsplash.com/photo-1600607687644-aac76c7e18b9"
     ],
     "onsite_facilities": { "pool": true, "gym": true }
+  },
+  {
+    "id": 16,
+    "name": "Lake Grande",
+    "address": "Jurong Lake Link, Singapore",
+    "lat": 1.3381,
+    "lng": 103.7215,
+    "price": 1150000,
+    "size_sqft": 820,
+    "bedrooms": 2,
+    "bathrooms": 2,
+    "completion_year": 2020,
+    "images": [
+      "https://images.unsplash.com/photo-1600585152220-90363fe7e115",
+      "https://images.unsplash.com/photo-1507089947368-19c1da9775ae"
+    ],
+    "onsite_facilities": { "pool": true, "gym": true }
+  },
+  {
+    "id": 17,
+    "name": "J Gateway",
+    "address": "Jurong East Central, Singapore",
+    "lat": 1.3331,
+    "lng": 103.7402,
+    "price": 1480000,
+    "size_sqft": 900,
+    "bedrooms": 2,
+    "bathrooms": 2,
+    "completion_year": 2016,
+    "images": [
+      "https://images.unsplash.com/photo-1568605114967-8130f3a36994",
+      "https://images.unsplash.com/photo-1554995207-c18c203602cb"
+    ],
+    "onsite_facilities": { "pool": true, "gym": true }
+  },
+  {
+    "id": 18,
+    "name": "North Park Residences",
+    "address": "Yishun Central, Singapore",
+    "lat": 1.4304,
+    "lng": 103.8354,
+    "price": 1280000,
+    "size_sqft": 880,
+    "bedrooms": 2,
+    "bathrooms": 2,
+    "completion_year": 2018,
+    "images": [
+      "https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b",
+      "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2"
+    ],
+    "onsite_facilities": { "pool": true, "gym": true }
+  },
+  {
+    "id": 19,
+    "name": "Florence Residences",
+    "address": "Hougang Avenue 2, Singapore",
+    "lat": 1.3622,
+    "lng": 103.8863,
+    "price": 1120000,
+    "size_sqft": 760,
+    "bedrooms": 2,
+    "bathrooms": 2,
+    "completion_year": 2022,
+    "images": [
+      "https://images.unsplash.com/photo-1556020685-ae41abfc9365",
+      "https://images.unsplash.com/photo-1502673530728-f79b4cab31b1"
+    ],
+    "onsite_facilities": { "pool": true, "gym": true }
+  },
+  {
+    "id": 20,
+    "name": "Affinity at Serangoon",
+    "address": "Serangoon North Avenue 1, Singapore",
+    "lat": 1.3774,
+    "lng": 103.8693,
+    "price": 1080000,
+    "size_sqft": 740,
+    "bedrooms": 2,
+    "bathrooms": 2,
+    "completion_year": 2023,
+    "images": [
+      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c",
+      "https://images.unsplash.com/photo-1598928506311-c55ded91a20c"
+    ],
+    "onsite_facilities": { "pool": true, "gym": true }
   }
-
-  /* 
-  Listings 11–50 continue in the same pattern:
-  - spread across Bukit Timah, Novena, Ang Mo Kio, Woodlands, Jurong
-  - prices taper from ~1.7M → ~900k
-  - sizes from 650–1400 sqft
-  - mix of 1–4 bedroom units
-  - all with images + facilities
-  */
-
 ]

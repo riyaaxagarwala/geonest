@@ -20,7 +20,6 @@ const icons = {
 };
 
 const amenitiesLayer = L.layerGroup().addTo(map);
-let propertyMarkers = [];
 
 function distanceKm(lat1, lon1, lat2, lon2) {
   const R = 6371;
@@ -33,42 +32,48 @@ function distanceKm(lat1, lon1, lat2, lon2) {
   return R * (2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a)));
 }
 
-// PANEL
-function updatePanel(listing, summary) {
+// -------- PANEL (SAFE) --------
+function updatePanel(listing, summary = {}) {
   const panel = document.getElementById("info-panel");
 
-  const imagesHTML = listing.images
-    ? `<div class="image-strip">
-        ${listing.images.map(img => `<img src="${img}?w=400&auto=format">`).join("")}
-      </div>`
-    : "";
+  const images = Array.isArray(listing.images) ? listing.images : [];
+  const facilities = listing.onsite_facilities || {};
 
   panel.innerHTML = `
-    <h2>${listing.name}</h2>
-    ${imagesHTML}
-    <p><b>Address:</b><br>${listing.address}</p>
+    <h2>${listing.name || "Property"}</h2>
+
+    ${images.length ? `
+      <div class="image-strip">
+        ${images.map(img => `<img src="${img}?w=400&auto=format">`).join("")}
+      </div>
+    ` : ""}
+
+    <p><b>Address:</b><br>${listing.address || "N/A"}</p>
+    <p><b>Price:</b> ${listing.price ? "$" + listing.price.toLocaleString() : "N/A"}</p>
 
     <h3>On-site Facilities</h3>
     <p>
-      🏊 Pool: ${listing.onsite_facilities.pool ? "Yes" : "No"}<br>
-      🏋️ Gym: ${listing.onsite_facilities.gym ? "Yes" : "No"}
+      🏊 Pool: ${facilities.pool ? "Yes" : "No"}<br>
+      🏋️ Gym: ${facilities.gym ? "Yes" : "No"}
     </p>
 
     <h3>Amenity Summary</h3>
     <p>
-      🏫 Schools: ${summary.schools}<br>
-      🚆 Nearest MRT: ${summary.nearest_mrt_km || "N/A"} km<br>
-      🏥 Nearest Hospital: ${summary.nearest_hospital_km} km
+      🏫 Schools: ${summary.schools ?? "N/A"}<br>
+      🚆 Nearest MRT: ${summary.nearest_mrt_km ?? "N/A"} km<br>
+      🏥 Nearest Hospital: ${summary.nearest_hospital_km ?? "N/A"} km
     </p>
   `;
 }
 
-// AMENITIES
+// -------- AMENITIES --------
 function fetchAmenities(listing) {
   amenitiesLayer.clearLayers();
 
   const lat = listing.lat;
   const lng = listing.lng;
+
+  if (!lat || !lng) return;
 
   const query = `
     [out:json];
@@ -93,30 +98,33 @@ function fetchAmenities(listing) {
       data.elements.forEach(el => {
         const d = distanceKm(lat, lng, el.lat, el.lon);
 
-        if (el.tags.amenity === "school") {
+        if (el.tags?.amenity === "school") {
           summary.schools++;
           L.marker([el.lat, el.lon], { icon: icons.school })
             .addTo(amenitiesLayer)
             .bindPopup(`${el.tags.name || "School"}<br>${d.toFixed(2)} km`);
         }
 
-        if (el.tags.railway) {
+        if (el.tags?.railway) {
           summary.nearest_mrt_km = summary.nearest_mrt_km === null
             ? d.toFixed(2)
             : Math.min(summary.nearest_mrt_km, d).toFixed(2);
           L.marker([el.lat, el.lon], { icon: icons.mrt })
             .addTo(amenitiesLayer)
-            .bindPopup(`${el.tags.name || "MRT Station"}<br>${d.toFixed(2)} km`);
+            .bindPopup(`${el.tags.name || "MRT"}<br>${d.toFixed(2)} km`);
         }
 
-        if (el.tags.amenity === "hospital" && d < closestHospital.d) {
+        if (el.tags?.amenity === "hospital" && d < closestHospital.d) {
           closestHospital = { el, d };
         }
       });
 
       if (closestHospital.el) {
         summary.nearest_hospital_km = closestHospital.d.toFixed(2);
-        L.marker([closestHospital.el.lat, closestHospital.el.lon], { icon: icons.hospital })
+        L.marker(
+          [closestHospital.el.lat, closestHospital.el.lon],
+          { icon: icons.hospital }
+        )
           .addTo(amenitiesLayer)
           .bindPopup(`${closestHospital.el.tags.name}<br>${closestHospital.d.toFixed(2)} km`);
       }
@@ -125,19 +133,22 @@ function fetchAmenities(listing) {
     });
 }
 
-// LOAD LISTINGS
+// -------- LOAD LISTINGS (THIS WAS FAILING BEFORE) --------
 fetch("data/listings.json")
   .then(r => r.json())
   .then(listings => {
     listings.forEach(listing => {
+      if (!listing.lat || !listing.lng) return;
+
       const marker = L.marker([listing.lat, listing.lng], {
         icon: propertyIcon,
         zIndexOffset: 1000
       }).addTo(map);
 
       marker.on("click", () => {
-        updatePanel(listing, { schools: "Loading...", nearest_mrt_km: null, nearest_hospital_km: "Loading..." });
+        updatePanel(listing);
         fetchAmenities(listing);
       });
     });
-  });
+  })
+  .catch(err => console.error("Listings load error:", err));

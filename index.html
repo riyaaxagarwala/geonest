@@ -5,26 +5,22 @@
   <title>GeoNest</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- Leaflet CSS (REQUIRED) -->
+  <!-- Leaflet CSS -->
   <link
     rel="stylesheet"
     href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
-    integrity="sha256-o9N1j7kCkG6bJx3FZ7F8dP9p8uW+v7FpC18JNpDut+Y="
-    crossorigin=""
   />
 
-  <!-- Your CSS -->
+  <!-- App CSS -->
   <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-  <!-- HEADER -->
   <header>
     <h1>GeoNest</h1>
     <p>Map-based real estate intelligence</p>
   </header>
 
-  <!-- FILTER BAR (UI ONLY FOR NOW) -->
   <div style="padding: 12px 18px; border-bottom: 1px solid #ddd;">
     <label>
       Budget (max):
@@ -41,25 +37,18 @@
     </label>
   </div>
 
-  <!-- MAIN CONTENT -->
   <div id="main">
     <div id="map"></div>
 
     <div id="info-panel">
-      <p style="margin-top: 0;">
-        Click a property to view full details
-      </p>
+      <p>Click a property to view full details</p>
     </div>
   </div>
 
-  <!-- Leaflet JS (MUST LOAD BEFORE script.js) -->
-  <script
-    src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
-    integrity="sha256-o8U0bM6+H0E5x8nH1t6dV6p+6tK8p9p+v1sC9xgE0Xg="
-    crossorigin=""
-  ></script>
+  <!-- Leaflet JS -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 
-  <!-- Your JS -->
+  <!-- App JS -->
   <script src="script.js"></script>
 </body>
 </html>

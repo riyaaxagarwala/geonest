@@ -1,0 +1,49 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background: #1f2933;
+  color: white;
+  padding: 12px 20px;
+}
+
+#controls {
+  padding: 10px 20px;
+  background: #f1f1f1;
+  display: flex;
+  gap: 20px;
+}
+
+#container {
+  display: flex;
+  height: calc(100vh - 130px);
+}
+
+#map {
+  flex: 2;
+}
+
+#info-panel {
+  flex: 1;
+  padding: 16px;
+  overflow-y: auto;
+  border-left: 1px solid #ddd;
+  background: #fafafa;
+}
+
+#info-panel img {
+  width: 100%;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+h3 {
+  margin-top: 16px;
+}
+
+.placeholder {
+  color: #666;
+  font-style: italic;
+}

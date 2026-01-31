@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>GeoNest</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+  />
+</head>
+<body>
+
+<header>
+  <h1>GeoNest</h1>
+  <p>Map-based real estate intelligence</p>
+</header>
+
+<div id="controls">
+  <label>
+    Budget (max):
+    <input type="number" id="budgetFilter" placeholder="e.g. 1200000">
+  </label>
+
+  <label>
+    Buyer Type:
+    <select id="buyerFilter">
+      <option value="all">All</option>
+      <option value="family">Family</option>
+      <option value="investor">Investor</option>
+    </select>
+  </label>
+</div>
+
+<div id="container">
+  <div id="map"></div>
+
+  <div id="info-panel">
+    <p class="placeholder">
+      Click a property to view full details
+    </p>
+  </div>
+</div>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

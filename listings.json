@@ -1,0 +1,502 @@
+[
+  {
+    "id": 1,
+    "name": "The Sail @ Marina Bay",
+    "address": "Marina Bay Tower, 2, Marina Boulevard, Central Subzone, Civic District, Downtown Core, Central Region, Singapore, 018987, Singapore",
+    "lat": 1.2812539,
+    "lng": 103.8528886,
+    "price": null,
+    "size_sqft": null,
+    "bedrooms": null,
+    "bathrooms": null,
+    "completion_year": null,
+    "images": [],
+    "price_history": [],
+    "purchase_history": [],
+    "onsite_facilities": {
+      "pool": false,
+      "gym": false
+    },
+    "amenity_summary": {
+      "schools": 1,
+      "malls": 0,
+      "hospitals": 0,
+      "nearest_mrt_km": 0.143
+    }
+  },
+  {
+    "id": 2,
+    "name": "Reflections at Keppel Bay",
+    "address": "1, Keppel Bay View, Reflections At Keppel Bay, Telok Blangah, Bukit Merah, Central Region, Singapore, 098402, Singapore",
+    "lat": 1.2681157,
+    "lng": 103.8143724,
+    "price": null,
+    "size_sqft": null,
+    "bedrooms": null,
+    "bathrooms": null,
+    "completion_year": null,
+    "images": [],
+    "price_history": [],
+    "purchase_history": [],
+    "onsite_facilities": {
+      "pool": false,
+      "gym": false
+    },
+    "amenity_summary": {
+      "schools": 2,
+      "malls": 0,
+      "hospitals": 0,
+      "nearest_mrt_km": 0.583
+    }
+  },
+  {
+    "id": 3,
+    "name": "The Interlace",
+    "address": "North London Collegiate School (NLCS Singapore), 130, Depot Road, Alexandra, Bukit Merah, Central Region, Singapore, 109708, Singapore",
+    "lat": 1.2823217,
+    "lng": 103.8093595,
+    "price": null,
+    "size_sqft": null,
+    "bedrooms": null,
+    "bathrooms": null,
+    "completion_year": null,
+    "images": [],
+    "price_history": [],
+    "purchase_history": [],
+    "onsite_facilities": {
+      "pool": false,
+      "gym": false
+    },
+    "amenity_summary": {
+      "schools": 1,
+      "malls": 0,
+      "hospitals": 3,
+      "nearest_mrt_km": null
+    }
+  },
+  {
+    "id": 4,
+    "name": "Duo Residences",
+    "address": "Bakery Cuisine, 7, Fraser Street, Bugis, Civic District, Downtown Core, Central Region, Singapore, 188778, Singapore",
+    "lat": 1.2993924,
+    "lng": 103.8574487,
+    "price": null,
+    "size_sqft": null,
+    "bedrooms": null,
+    "bathrooms": null,
+    "completion_year": null,
+    "images": [],
+    "price_history": [],
+    "purchase_history": [],
+    "onsite_facilities": {
+      "pool": false,
+      "gym": false
+    },
+    "amenity_summary": {
+      "schools": 3,
+      "malls": 3,
+      "hospitals": 1,
+      "nearest_mrt_km": 0.011
+    }
+  },
+  {
+    "id": 5,
+    "name": "Marina One Residences",
+    "address": "Marina Way, Central Subzone, Downtown Core, Central Region, Singapore, 018982, Singapore",
+    "lat": 1.2779649,
+    "lng": 103.8544009,
+    "price": null,
+    "size_sqft": null,
+    "bedrooms": null,
+    "bathrooms": null,
+    "completion_year": null,
+    "images": [],
+    "price_history": [],
+    "purchase_history": [],
+    "onsite_facilities": {
+      "pool": false,
+      "gym": false
+    },
+    "amenity_summary": {
+      "schools": 0,
+      "malls": 0,
+      "hospitals": 0,
+      "nearest_mrt_km": 0.103
+    }
+  },
+  {
+    "id": 6,
+    "name": "Sky Habitat",
+    "address": "Bishan Street 15, Bishan East, Bishan, Central Region, Singapore, 579785, Singapore",
+    "lat": 1.3520744,
+    "lng": 103.8504151,
+    "price": null,
+    "size_sqft": null,
+    "bedrooms": null,
+    "bathrooms": null,
+    "completion_year": null,
+    "images": [],
+    "price_history": [],
+    "purchase_history": [],
+    "onsite_facilities": {
+      "pool": false,
+      "gym": false
+    },
+    "amenity_summary": {
+      "schools": 0,
+      "malls": 0,
+      "hospitals": 0,
+      "nearest_mrt_km": 0.127
+    }
+  },
+  {
+    "id": 7,
+    "name": "Wallich Residence",
+    "address": "Sofitel Singapore City Centre, 9, Wallich Street, Tanjong Pagar, Downtown Core, Central Region, Singapore, 078885, Singapore",
+    "lat": 1.2771112,
+    "lng": 103.8451982,
+    "price": null,
+    "size_sqft": null,
+    "bedrooms": null,
+    "bathrooms": null,
+    "completion_year": null,
+    "images": [],
+    "price_history": [],
+    "purchase_history": [],
+    "onsite_facilities": {
+      "pool": false,
+      "gym": false
+    },
+    "amenity_summary": {
+      "schools": 3,
+      "malls": 0,
+      "hospitals": 1,
+      "nearest_mrt_km": 0.065
+    }
+  },
+  {
+    "id": 8,
+    "name": "Martin Modern",
+    "address": "Martin Place, Institution Hill, River Valley, Central Region, Singapore, 237988, Singapore",
+    "lat": 1.2938825,
+    "lng": 103.8388512,
+    "price": null,
+    "size_sqft": null,
+    "bedrooms": null,
+    "bathrooms": null,
+    "completion_year": null,
+    "images": [],
+    "price_history": [],
+    "purchase_history": [],
+    "onsite_facilities": {
+      "pool": false,
+      "gym": false
+    },
+    "amenity_summary": {
+      "schools": 0,
+      "malls": 0,
+      "hospitals": 1,
+      "nearest_mrt_km": 0.553
+    }
+  },
+  {
+    "id": 9,
+    "name": "Parc Esta",
+    "address": "Fornica Singapore PTE LTD, Sims Avenue, Aljunied, Geylang, Central Region, Singapore, 387564, Singapore",
+    "lat": 1.3160488,
+    "lng": 103.8883924,
+    "price": null,
+    "size_sqft": null,
+    "bedrooms": null,
+    "bathrooms": null,
+    "completion_year": null,
+    "images": [],
+    "price_history": [],
+    "purchase_history": [],
+    "onsite_facilities": {
+      "pool": false,
+      "gym": false
+    },
+    "amenity_summary": {
+      "schools": 2,
+      "malls": 0,
+      "hospitals": 0,
+      "nearest_mrt_km": 0.412
+    }
+  },
+  {
+    "id": 10,
+    "name": "Treasure at Tampines",
+    "address": "Tampines Lane, Tampines East, Tampines, East Region, Singapore, 522136, Singapore",
+    "lat": 1.3446905,
+    "lng": 103.9458296,
+    "price": null,
+    "size_sqft": null,
+    "bedrooms": null,
+    "bathrooms": null,
+    "completion_year": null,
+    "images": [],
+    "price_history": [],
+    "purchase_history": [],
+    "onsite_facilities": {
+      "pool": false,
+      "gym": false
+    },
+    "amenity_summary": {
+      "schools": 1,
+      "malls": 0,
+      "hospitals": 1,
+      "nearest_mrt_km": 0.773
+    }
+  },
+  {
+    "id": 11,
+    "name": "The Tapestry",
+    "address": "Tampines Street 86, Tampines West, Tampines, East Region, Singapore, 521870, Singapore",
+    "lat": 1.3558861,
+    "lng": 103.9314479,
+    "price": null,
+    "size_sqft": null,
+    "bedrooms": null,
+    "bathrooms": null,
+    "completion_year": null,
+    "images": [],
+    "price_history": [],
+    "purchase_history": [],
+    "onsite_facilities": {
+      "pool": false,
+      "gym": false
+    },
+    "amenity_summary": {
+      "schools": 0,
+      "malls": 0,
+      "hospitals": 0,
+      "nearest_mrt_km": null
+    }
+  },
+  {
+    "id": 12,
+    "name": "Parc Riviera",
+    "address": "West Coast Vale, West Coast, Clementi, West Region, Singapore, 127473, Singapore",
+    "lat": 1.316787,
+    "lng": 103.7512812,
+    "price": null,
+    "size_sqft": null,
+    "bedrooms": null,
+    "bathrooms": null,
+    "completion_year": null,
+    "images": [],
+    "price_history": [],
+    "purchase_history": [],
+    "onsite_facilities": {
+      "pool": false,
+      "gym": false
+    },
+    "amenity_summary": {
+      "schools": 0,
+      "malls": 0,
+      "hospitals": 0,
+      "nearest_mrt_km": 0.827
+    }
+  },
+  {
+    "id": 13,
+    "name": "Principal Garden",
+    "address": "Prince Charles Crescent, Alexandra North, Bukit Merah, Central Region, Singapore, 249078, Singapore",
+    "lat": 1.2935144,
+    "lng": 103.8210291,
+    "price": null,
+    "size_sqft": null,
+    "bedrooms": null,
+    "bathrooms": null,
+    "completion_year": null,
+    "images": [],
+    "price_history": [],
+    "purchase_history": [],
+    "onsite_facilities": {
+      "pool": false,
+      "gym": false
+    },
+    "amenity_summary": {
+      "schools": 2,
+      "malls": 0,
+      "hospitals": 2,
+      "nearest_mrt_km": 0.617
+    }
+  },
+  {
+    "id": 14,
+    "name": "The Crest",
+    "address": "Prince Charles Crescent, Alexandra North, Bukit Merah, Central Region, Singapore, 249078, Singapore",
+    "lat": 1.2935144,
+    "lng": 103.8210291,
+    "price": null,
+    "size_sqft": null,
+    "bedrooms": null,
+    "bathrooms": null,
+    "completion_year": null,
+    "images": [],
+    "price_history": [],
+    "purchase_history": [],
+    "onsite_facilities": {
+      "pool": false,
+      "gym": false
+    },
+    "amenity_summary": {
+      "schools": 2,
+      "malls": 0,
+      "hospitals": 2,
+      "nearest_mrt_km": 0.617
+    }
+  },
+  {
+    "id": 15,
+    "name": "Artra",
+    "address": "Alexandra View, Redhill, Bukit Merah, Central Region, Singapore, 158742, Singapore",
+    "lat": 1.2902448,
+    "lng": 103.8179666,
+    "price": null,
+    "size_sqft": null,
+    "bedrooms": null,
+    "bathrooms": null,
+    "completion_year": null,
+    "images": [],
+    "price_history": [],
+    "purchase_history": [],
+    "onsite_facilities": {
+      "pool": false,
+      "gym": false
+    },
+    "amenity_summary": {
+      "schools": 2,
+      "malls": 0,
+      "hospitals": 1,
+      "nearest_mrt_km": 0.119
+    }
+  },
+  {
+    "id": 16,
+    "name": "Queens Peak",
+    "address": "Dundee Road, Margaret Drive, Dawson, Queenstown, Central Region, Singapore, 149457, Singapore",
+    "lat": 1.294828,
+    "lng": 103.8071718,
+    "price": null,
+    "size_sqft": null,
+    "bedrooms": null,
+    "bathrooms": null,
+    "completion_year": null,
+    "images": [],
+    "price_history": [],
+    "purchase_history": [],
+    "onsite_facilities": {
+      "pool": false,
+      "gym": false
+    },
+    "amenity_summary": {
+      "schools": 0,
+      "malls": 0,
+      "hospitals": 3,
+      "nearest_mrt_km": 0.128
+    }
+  },
+  {
+    "id": 17,
+    "name": "Normanton Park",
+    "address": "Citadines Science Park Singapore, 7, Science Park Drive, Kent Ridge, one-north, Queenstown, Central Region, Singapore, 119316, Singapore",
+    "lat": 1.2917111,
+    "lng": 103.7876173,
+    "price": null,
+    "size_sqft": null,
+    "bedrooms": null,
+    "bathrooms": null,
+    "completion_year": null,
+    "images": [],
+    "price_history": [],
+    "purchase_history": [],
+    "onsite_facilities": {
+      "pool": false,
+      "gym": false
+    },
+    "amenity_summary": {
+      "schools": 1,
+      "malls": 0,
+      "hospitals": 2,
+      "nearest_mrt_km": 0.317
+    }
+  },
+  {
+    "id": 18,
+    "name": "Kent Ridge Hill Residences",
+    "address": "Singapore",
+    "lat": 1.357107,
+    "lng": 103.8194992,
+    "price": null,
+    "size_sqft": null,
+    "bedrooms": null,
+    "bathrooms": null,
+    "completion_year": null,
+    "images": [],
+    "price_history": [],
+    "purchase_history": [],
+    "onsite_facilities": {
+      "pool": false,
+      "gym": false
+    },
+    "amenity_summary": {
+      "schools": 0,
+      "malls": 0,
+      "hospitals": 0,
+      "nearest_mrt_km": null
+    }
+  },
+  {
+    "id": 19,
+    "name": "The Florence Residences",
+    "address": "Hougang Avenue 2, Kovan, Hougang, North-east Region, Singapore, 530710, Singapore",
+    "lat": 1.3676389,
+    "lng": 103.8871888,
+    "price": null,
+    "size_sqft": null,
+    "bedrooms": null,
+    "bathrooms": null,
+    "completion_year": null,
+    "images": [],
+    "price_history": [],
+    "purchase_history": [],
+    "onsite_facilities": {
+      "pool": false,
+      "gym": false
+    },
+    "amenity_summary": {
+      "schools": 0,
+      "malls": 0,
+      "hospitals": 0,
+      "nearest_mrt_km": 0.668
+    }
+  },
+  {
+    "id": 20,
+    "name": "The Woodleigh Residences",
+    "address": "Bidadari Park Drive, Bidadari, Toa Payoh, Central Region, Singapore, 367803, Singapore",
+    "lat": 1.3386011,
+    "lng": 103.8724573,
+    "price": null,
+    "size_sqft": null,
+    "bedrooms": null,
+    "bathrooms": null,
+    "completion_year": null,
+    "images": [],
+    "price_history": [],
+    "purchase_history": [],
+    "onsite_facilities": {
+      "pool": false,
+      "gym": false
+    },
+    "amenity_summary": {
+      "schools": 1,
+      "malls": 1,
+      "hospitals": 0,
+      "nearest_mrt_km": 0.16
+    }
+  }
+]

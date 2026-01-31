@@ -47,3 +47,16 @@ h3 {
   color: #666;
   font-style: italic;
 }
+.image-strip {
+  display: flex;
+  gap: 8px;
+  overflow-x: auto;
+  margin: 12px 0;
+}
+
+.image-strip img {
+  height: 120px;
+  border-radius: 6px;
+  object-fit: cover;
+}
+

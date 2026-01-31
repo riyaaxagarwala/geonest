@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-   <meta charset="UTF-8" />
+  <meta charset="UTF-8" />
   <title>GeoNest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- Leaflet CSS -->
+  <!-- Leaflet CSS (REQUIRED) -->
   <link
     rel="stylesheet"
     href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
@@ -15,41 +16,50 @@
   <!-- Your CSS -->
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
+  <!-- HEADER -->
+  <header>
+    <h1>GeoNest</h1>
+    <p>Map-based real estate intelligence</p>
+  </header>
 
-<header>
-  <h1>GeoNest</h1>
-  <p>Map-based real estate intelligence</p>
-</header>
+  <!-- FILTER BAR (UI ONLY FOR NOW) -->
+  <div style="padding: 12px 18px; border-bottom: 1px solid #ddd;">
+    <label>
+      Budget (max):
+      <input type="number" placeholder="e.g. 1200000" />
+    </label>
 
-<div id="controls">
-  <label>
-    Budget (max):
-    <input type="number" id="budgetFilter" placeholder="e.g. 1200000">
-  </label>
-
-  <label>
-    Buyer Type:
-    <select id="buyerFilter">
-      <option value="all">All</option>
-      <option value="family">Family</option>
-      <option value="investor">Investor</option>
-    </select>
-  </label>
-</div>
-
-<div id="container">
-  <div id="map"></div>
-
-  <div id="info-panel">
-    <p class="placeholder">
-      Click a property to view full details
-    </p>
+    <label style="margin-left: 16px;">
+      Buyer Type:
+      <select>
+        <option>All</option>
+        <option>Investor</option>
+        <option>Owner-Occupier</option>
+      </select>
+    </label>
   </div>
-</div>
 
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-<script src="script.js"></script>
+  <!-- MAIN CONTENT -->
+  <div id="main">
+    <div id="map"></div>
+
+    <div id="info-panel">
+      <p style="margin-top: 0;">
+        Click a property to view full details
+      </p>
+    </div>
+  </div>
+
+  <!-- Leaflet JS (MUST LOAD BEFORE script.js) -->
+  <script
+    src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-o8U0bM6+H0E5x8nH1t6dV6p+6tK8p9p+v1sC9xgE0Xg="
+    crossorigin=""
+  ></script>
+
+  <!-- Your JS -->
+  <script src="script.js"></script>
 </body>
 </html>
-
